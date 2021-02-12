@@ -87,8 +87,7 @@ class TodoMarketing extends React.Component {
 
   createListAndOpen(){
     this.setState({showLoadingBackdrop: true});
-      console.log("url is ", process.env.REACT_APP_BASE_URL);
-    let url = process.env.REACT_APP_BASE_URL || 'http://localhost:8999';
+    let url = process.env.REACT_APP_BASE_URL;
     axios.post(`${url}/list/create`, {
       name: this.state.listName
     })
