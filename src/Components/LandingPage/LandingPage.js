@@ -87,21 +87,22 @@ class TodoMarketing extends React.Component {
 
   createListAndOpen(){
     this.setState({showLoadingBackdrop: true});
-    // axios.post(`https://api.quicktodos.com/list/create`, {
-      axios.post(`http://localhost:8999/list/create`, {
-        name: this.state.listName
-      })
-      .then(res => {
-          window.location.assign("/" + res.data.slug);
-      }).catch(err => {
-        MySwal.fire({
-          title: "Failed to create list!",
-          text: "Sorry about that... If this continues to happen, please contact support@quicktodos.com",
-          icon: 'error',
-          confirmButtonText: 'Okay',
-          ...SwalStylings
-        }).then(() => {this.setState({showLoadingBackdrop: false});});
-      });
+      console.log("url is ", process.env.REACT_APP_BASE_URL);
+    let url = process.env.REACT_APP_BASE_URL || 'http://localhost:8999';
+    axios.post(`${url}/list/create`, {
+      name: this.state.listName
+    })
+    .then(res => {
+        window.location.assign("/" + res.data.slug);
+    }).catch(err => {
+      MySwal.fire({
+        title: "Failed to create list!",
+        text: "Sorry about that... If this continues to happen, please contact support@quicktodos.com",
+        icon: 'error',
+        confirmButtonText: 'Okay',
+        ...SwalStylings
+      }).then(() => {this.setState({showLoadingBackdrop: false});});
+    });
   }
 }
 

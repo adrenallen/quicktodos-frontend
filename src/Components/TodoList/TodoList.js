@@ -102,8 +102,7 @@ class TodoList extends Component {
     wsConnectionAttempts = 0;
     reconnectWS(){
       this.showLoading(true);
-      this.ws = new WebSocket('ws://localhost:8999');
-      // this.ws = new WebSocket('wss://api.quicktodos.com');
+      this.ws = new WebSocket(process.env.REACT_APP_WS_URL);
       this.ws.addEventListener('open', event => {
         this.showLoading(false);
         this.setOfflineMode(false);
