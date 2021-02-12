@@ -1,0 +1,8 @@
+.drag-forbidden{
+  cursor:not-allowed !important;
+  opacity:0.7;
+}
+
+.drag-allowed{
+  cursor:move;
+}

@@ -1,0 +1,102 @@
+
+.content-div, .MuiPaper-root{
+    display:block;
+    width:100%;
+    max-width:800px;
+    margin:auto;
+    padding-bottom:20px;
+    background:white;
+}
+
+.completed-task-textfield{
+    opacity:0.5;
+    text-decoration: line-through;
+}
+
+.center-everything{
+    text-align: center;
+    margin:auto;
+}
+
+.list-name-box{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.center-everything Button{
+    display:block;
+    text-align: center;
+    margin:auto;
+}
+
+.ExpansionPanel{
+    margin-top:15px;
+}
+
+.ExpansionPanel.MuiPaper-root.MuiExpansionPanel-root.MuiExpansionPanel-rounded{
+    padding-bottom:0;
+}
+
+.DeleteListIconButton{
+    display:block;
+    position:absolute !important;
+    top:10px;
+    right:10px;
+}
+
+.home-icon-button{
+    display:block;
+    position:absolute !important;
+    left:10px;
+    top:10px;
+}
+.home-icon{
+    width:39px;
+}
+
+.header-box{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.no-items-left{
+    text-align:center;
+    width:100%;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.ExpansionPanelList{
+    width:100%;
+}
+
+.list-name-input{
+    margin-top:15px !important;
+    width:65%;
+    min-width:192px;
+    max-width:500px;
+}
+
+
+.list-name-input textarea{
+    font-weight:bold;
+    font-size:120%;
+    text-align:center;
+}
+
+.share-fab{
+    margin-top:15px !important;
+}
+
+.add-button-box{
+    text-align:center;
+}
+.add-button{
+
+}
+.item-textfield textarea:disabled{
+    color:black;
+    font-style:italic;
+    cursor:not-allowed;
+}

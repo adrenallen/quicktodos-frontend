@@ -1,0 +1,218 @@
+body{
+    background:#3b77d8;
+}
+
+.content-root{
+    width:100%;
+    /* background: #eeeeee; */
+    background:#3b77d8;
+}
+
+
+.restrict-middle{
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.top-color-bg{
+    background:#3b77d8;
+}
+
+.default-padding-top-bottom{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.header-logo{
+    width:75%;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.header-box{
+    width:100%;
+    text-align:center;
+}
+
+.subheader-line{
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing:1px;
+}
+
+.subheader-line-2{
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    letter-spacing:1px;
+    
+}
+
+@media (max-width:550px){
+    .subheader-line{
+        font-size:18px;
+        text-shadow: none;
+    }
+
+    .subheader-line-2{
+        font-size:18px;
+        font-weight:normal;
+        margin-left:5px;
+        margin-right:5px;
+        /* display:none; */
+    }
+
+    .feature-box{
+    }
+
+    .faq-box-header{
+        width:200px !important;
+    }
+
+    .new-list-input{
+        width:75%;
+    }
+
+    .new-list-button{
+        margin-top:15px !important;
+        display:block;
+    }
+
+    .faq-box{
+        margin-left:5px;
+        margin-right:5px;
+    }
+}
+
+@media (min-width:550px) {
+    .new-list-input .MuiOutlinedInput-root{
+        border-top-right-radius:0px;
+        border-bottom-right-radius:0px;
+        border-right:none;
+    }
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.new-list-button.MuiButton-containedPrimary{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-left:none;
+    }
+
+    .faq-box{
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+.new-list-box{
+    margin-top:40px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.new-list-input{
+    height:40px;
+}
+
+.new-list-button{
+    height:40px;
+}
+
+.new-list-input .MuiOutlinedInput-root{
+    background:white;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.new-list-button.MuiButton-containedPrimary{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left:none;
+    background:rgb(75, 75, 75);
+}
+
+.feature-grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.feature-box{
+    max-width:350px;
+    text-align:center;
+    height:200px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:20px;
+}
+
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded.feature-box{
+    /* background:#3b77d8; */
+    /* background:rgb(75, 75, 75); */
+}
+
+.feature-box-icon{
+    padding-top:20px;
+    text-align:center;
+}
+.feature-box-icon.icon{
+    
+}
+.feature-box-title{
+    /* color:white; */
+}
+.feature-box-description.MuiTypography-root{
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* color:white; */
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.faq-box{
+    text-align:center;
+    padding-bottom:15px;
+}
+
+.faq-box-header{
+    color:white;
+    letter-spacing: 1px;
+    padding:10px;
+    border:1px solid white;
+    border-radius:4px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+    width:350px;    
+}
+
+.question-prefix{
+    color:#3b77d8;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.faq-lines .MuiPaper-root.MuiExpansionPanel-root.MuiExpansionPanel-rounded{
+    padding-bottom:0;
+}
+
+.faq-lines .MuiExpansionPanel-root.Mui-expanded{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.faq-line-expansion-panel{
+    text-align:left;
+}
+
+.copyright-notice{
+    color:white;
+    opacity:0.3;
+    font-size:12px;
+    text-align:center;
+    margin-left:1%;
+}
+
+.loading-backdrop{
+    z-index:999 !important; /*What have I done*/
+}

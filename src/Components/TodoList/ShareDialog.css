@@ -1,0 +1,23 @@
+.copy-button{
+    margin-top:15px !important;
+    max-width:128px;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    margin-bottom:15px !important;
+    text-align:center;
+}
+
+.copy-text{
+    margin-left:auto !important;
+    margin-right:auto !important;
+    width:90%;
+}
+
+.copy-text input{
+    text-align:center;
+    font-weight:bold;
+}
+
+.share-dialog{
+    text-align:center;
+}
